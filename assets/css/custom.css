@@ -1,0 +1,26 @@
+/********* GLOBAL STYLES *********/
+body {
+  font-size: 18px;
+}
+
+h1,
+h2,
+.card-header-title,
+.btn {
+  font-family: 'Audiowide', sans-serif;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+p {
+  font-family: 'Nunito',sans-serif;
+  font-size: 1.10em;
+}
+
+/*********BOOTSTRAP OVERRIDES*********/
