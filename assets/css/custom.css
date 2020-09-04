@@ -31,4 +31,8 @@ p {
   .w-responsive {
     max-width: 70%;
   }
+
+  .w-half-responsive {
+    width: 50%;
+  }
 }
