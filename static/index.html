@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100 bg-light text-dark">
+<html lang="en" class="h-100">
 
 <head>
   <meta charset="UTF-8">
@@ -11,43 +11,51 @@
 
 </head>
 <body class="d-flex flex-column h-100">
-  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-    <a class="navbar-brand text-light" href="/">
-      <h1>I Love Being a Nerd</h1>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link text-light" href="contact.html">
-          Contact
-        </a>
+  <header class='d-flex flex-column bg-dark'>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link text-light" href="/">
+            Home
+          </a>
+          <a class="nav-item nav-link text-light" href="contact.html">
+            About
+          </a>
+          <a class="nav-item nav-link text-light" href="contact.html">
+            Contact
+          </a>
+        </div>
       </div>
-    </div>
-  </nav>
-
+    </nav>
+    <h1 class='home-h1 text-light align-self-center py-5'>I Love Being a Nerd</h1>
+  </header>
   <main role="main" class="flex-shrink-0">
     <div class="container">
-      <div class="row my-4">
-        <div class="col">
-          <div class="card shadow w-75 mx-auto" id="latest-post">
-            <div class="card-header bg-dark">
-              <h2 class="card-title text-warning">The Title of This post</h2>
-              <img src="https://placeimg.com/640/480/tech/grayscale" class='card-img-top img-fluid'>
-            </div>
-            <div class="card-body">
-              <p class="card-text">A small bit of info about the episode you're going to listen to.</p>
-              <a href="/podcast/episode.html" class="btn btn-success">Go somewhere</a>
-            </div>
+      <div class="row my-5">
+        <div class="col-md-8">
+          <div class='post-featured-img'>
+            <img src="assets/img/laptop.png" class='img-responsive'>
           </div>
+        </div>
+        <div class="col-md-4 d-flex flex-column justify-content-center">
+          <section class="latest-post">
+            <h2 class='text-primary'>Title of the Post</h2>
+            <p>The excerpt for the post lives here. 
+              Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when...</p>
+            <a class="btn btn-primary btn-lg" href='podcast/episode.html'>Read It!</a>
+          </section>
+          <p>Categories: <a href="/">Tech</a></p>
+          
         </div>
       </div>
     </div>
   </main>
 
-  <footer class="footer mt-auto bg-primary py-3">
+  <footer class="footer mt-auto bg-dark py-3">
     <div class="container">
       <p><a class="text-light" href="/">I Love Being a Nerd &copy;2020</a></p>
       <small class="text-light">Site build by <a class="text-light" href="https://noelleanderson.dev" target="_blank"
